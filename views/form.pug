@@ -1,0 +1,15 @@
+html
+	head
+		title File Metadata Microservice
+	body
+		form(action = "/", method="POST", enctype="multipart/form-data")
+			div
+				h4 choose the upload file and see its file size
+				input(type="file" name = "myFile" )
+				button(type = "upload") upload
+		if filesize	
+			script.
+				alert("FileSize: "+#{filesize})
+				
+
+
